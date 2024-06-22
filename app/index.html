@@ -19,7 +19,13 @@
 <div class="app">
 	@@include('inc/header.html')
 	<div class="app-content">
-		Chart is going to be here...
+		
+		<div class="js_showinfo" style="font-size: 22px; text-align: center; padding: 40px 0;">Chart is going to be here...</div>
+
+		<div class="chips_container">
+			@@include('inc/chip.html', { "name": "סטימצקי", "color": "pink" })
+			@@include('inc/chip.html', { "name": "Tesla", "color": "orange" })
+		</div><!-- /chips_container -->
 	</div><!-- /app-content -->
 	@@include('inc/navbar.html')
 </div><!-- /app -->
@@ -28,6 +34,7 @@
 @@include('inc/modal1.html')
 @@include('inc/modal2.html')
 @@include('inc/modal3.html')
+@@include('inc/autocomplete.html')
 
 <div class="chart_info">
 	C: 2,031 <b class="color-danger">0.44%-</b> | O: 2,012 | L: 1,977 | H: 2,028 | Vol: 1,282

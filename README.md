@@ -15,6 +15,6 @@ folder: /app
 
 folder /build
 
-### command for running
+### Command for running
 
 `gulp watch`
