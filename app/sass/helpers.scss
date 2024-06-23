@@ -53,6 +53,7 @@ input::-moz-focus-inner {border: 0; padding: 0;}
 
 /* btn */
 .btn {
+	--pad-hz: 12px;
 	background: 0;
 	border: 1px solid transparent;
 	border-radius: 0;
@@ -71,17 +72,17 @@ input::-moz-focus-inner {border: 0; padding: 0;}
 	&-border {
 		border-color: var(--color-light-blue);
 		border-radius: 8px;
-		padding: 8px 12px;
+		padding: 8px var(--pad-hz);
 	}
 	&-filled {
 		background: var(--color-light);
 		border-radius: 8px;
-		padding: 8px 12px;
+		padding: 8px var(--pad-hz);
 	}
 	&-primary {
 		background: var(--color-primary);
 		color: var(--color-white);
-		padding: 14px 12px;
+		padding: 14px var(--pad-hz);
 		border-radius: 12px;
 		font-size: 16px;
 		font-weight: 600;
@@ -91,7 +92,7 @@ input::-moz-focus-inner {border: 0; padding: 0;}
 		color: var(--color-white);
 	}
 	&-text { flex-grow: 1; text-align: center; }
-	&-sm { padding: 5px 12px; min-width: 92px; }
+	&-sm { padding: 5px var(--pad-hz); min-width: 92px; }
 	&-link {
 		color: var(--color-primary);
 		font-weight: 600;

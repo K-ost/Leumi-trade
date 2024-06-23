@@ -248,6 +248,9 @@
 @media screen and (max-width: 700px) {
 	.sm-hidden { display: none !important; }
   .sm-visible { display: block !important; }
+  .btn {
+    --pad-hz: 8px;
+  }
 
   /* app_header */
   .app_header {

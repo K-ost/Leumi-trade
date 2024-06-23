@@ -123,6 +123,7 @@ input::-moz-focus-inner {
 
 /* btn */
 .btn {
+  --pad-hz: 12px;
   background: 0;
   border: 1px solid transparent;
   border-radius: 0;
@@ -142,17 +143,17 @@ input::-moz-focus-inner {
 .btn-border {
   border-color: var(--color-light-blue);
   border-radius: 8px;
-  padding: 8px 12px;
+  padding: 8px var(--pad-hz);
 }
 .btn-filled {
   background: var(--color-light);
   border-radius: 8px;
-  padding: 8px 12px;
+  padding: 8px var(--pad-hz);
 }
 .btn-primary {
   background: var(--color-primary);
   color: var(--color-white);
-  padding: 14px 12px;
+  padding: 14px var(--pad-hz);
   border-radius: 12px;
   font-size: 16px;
   font-weight: 600;
@@ -166,7 +167,7 @@ input::-moz-focus-inner {
   text-align: center;
 }
 .btn-sm {
-  padding: 5px 12px;
+  padding: 5px var(--pad-hz);
   min-width: 92px;
 }
 .btn-link {
@@ -606,6 +607,10 @@ input::-moz-focus-inner {
 
   .sm-visible {
     display: block !important;
+  }
+
+  .btn {
+    --pad-hz: 8px;
   }
 
   /* app_header */
