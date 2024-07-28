@@ -342,7 +342,7 @@ body[data-theme=dark] .icon-info {
   border-radius: 16px;
   padding: 0;
   position: relative;
-  -webkit-appearance: none;
+  --webkit-appearance: none;
   border: 0;
   cursor: pointer;
   display: inline-block;
