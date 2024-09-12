@@ -1,206 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<title>Home</title>
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="author" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<link rel="shortcut icon" href="images/favicon.ico">
-	<link rel="stylesheet" href="css/styles.css" type="text/css">
-	<!--[if IE]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script><![endif]-->
-</head>
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <!--[if IE
+      ]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script
+    ><![endif]-->
+  </head>
 
-<body data-theme="light">
-
-<div class="app">
-	<div class="app_header">
-  <button class="btn btn_icon icon-more"></button>
-  <div class="app_header-item">
-    <span>Apple, Inc.</span>
-    <span class="divider"></span>
-    <span>AAPL</span>
-    <span class="divider sm-hidden"></span>
-  </div>
-  <div class="app_header-item mr-middle">
-    <div class="app_header-count">2,031.07</div>
-    <div class="app_header-percent">+0.04%</div>
-    <button class="btn btn_icon icon-question"></button>
-  </div>
-  <div class="app_header-item mr-auto">
-    <div class="app_header-numbers">נכון ל-12.12.2023, 14:05</div>
-    <button class="btn btn_icon icon-info"></button>
-    <button class="btn btn_icon icon-refresh"></button>
-  </div>
-  <button class="btn appbar-tools show_modal1_top"></button>
-</div><!-- /app_header -->
-	<div class="app-content">
-		
-		<div class="js_showinfo" style="font-size: 22px; text-align: center; padding: 40px 0;">Chart is going to be here...</div>
-
-		<div class="chips_container">
-			<div class="chip">
-  <div class="chip-icon pink"></div>
-  <div class="chip-name">סטימצקי</div>
-  <button class="btn chip-delete"></button>
-</div><!-- /chip -->
-			<div class="chip">
-  <div class="chip-icon orange"></div>
-  <div class="chip-name">Tesla</div>
-  <button class="btn chip-delete"></button>
-</div><!-- /chip -->
-		</div><!-- /chips_container -->
-	</div><!-- /app-content -->
-	<div class="appbar">
-  <button class="btn btn-filled show_modal2">
-    <span class="btn-text sm-hidden mr1">נרות</span>
-    <span class="icon icon-chart2"></span>
-  </button>
-
-  <button class="btn btn-filled sm-hidden show_modal3">
-    <span class="btn-text sm-hidden mr1">תוך יומי</span>
-    <span class="icon icon-zoom"></span>
-  </button>
-
-  <button class="btn btn-filled sm-visible">
-    יומי
-  </button>
-
-  <button class="btn btn-filled sm-visible">
-    שבוע אחרון
-  </button>
-
-  <ul class="appbar_menu">
-    <li><button class="btn btn-filled active">1W</button></li>
-    <li><button class="btn btn-filled">1M</button></li>
-    <li><button class="btn btn-filled">3M</button></li>
-    <li><button class="btn btn-filled">6M</button></li>
-    <li><button class="btn btn-filled">1Y</button></li>
-    <li><button class="btn btn-filled" id="themeSwitcher">MAX</button></li>
-  </ul>
-  
-  <button class="btn btn-border js_autocompleteModal">
-    <span class="btn-text mr1">השוואה</span>
-    <span class="icon icon-plus"></span>
-  </button>
-
-  <button class="btn appbar-tools show_modal1"></button>
-</div><!-- /appbar -->
-</div><!-- /app -->
-
-
-<div class="modal" id="modal1">
-	<div class="modal-overlay"></div>
-	<div class="modal-dialog">
-		<div class="modal-header">
-			<div class="modal-title">תקופת זמן</div>
-		</div>
-		<div class="modal-content">
-			<ul class="modal-nav">
-				<li><a href="#" class="active">שבוע אחרון</a></li>
-				<li><a href="#">חודש אחרון</a></li>
-				<li><a href="#">3 חודשים אחרונים</a></li>
-				<li><a href="#">חצי שנה אחרונה</a></li>
-			</ul>
-		</div>
-	</div>
-</div><!-- /modal -->
-<div class="modal" id="modal2">
-  <div class="modal-overlay"></div>
-  <div class="modal-dialog">
-    <div class="modal-header">
-      <div class="modal-title">תקופת זמן</div>
-    </div>
-    <div class="modal-content">
-      <ul class="modal-nav">
-        <li>
-          <a href="#" class="active"
-            ><span class="icon icon-chart1"></span> קווי</a
-          >
-        </li>
-        <li>
-          <a href="#"><span class="icon icon-chart2"></span> נרות</a>
-        </li>
-        <li>
-          <a href="#"><span class="icon icon-chart3"></span> עמודות</a>
-        </li>
-        <li>
-          <a href="#"><span class="icon icon-chart4"></span> רנקו</a>
-        </li>
-        <li>
-          <a href="#"><span class="icon icon-chart5"></span> הייקן-אשי</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<!-- /modal -->
-
-<div class="modal" id="modal3">
-	<div class="modal-overlay"></div>
-	<div class="modal-dialog">
-		<div class="modal-header">
-			<div class="modal-title">תקופת זמן</div>
-      <button class="btn btn-border btn-sm">איפוס</button>
-		</div>
-		<div class="modal-content">
-			<ul class="modal-nav">
-				<li>
-          <label class="switch-item"><input type="checkbox" class="switcher"> רקע כהה</label>
-        </li>
-        <li>
-          <label class="switch-item"><input type="checkbox" class="switcher"> נרות מלאים</label>
-        </li>
-        <li>
-          <label class="switch-item"><input type="checkbox" class="switcher"> קווי רשת (מתאר)</label>
-        </li>
-			</ul>
-      <div class="sm-visible">
-        <ul class="segments">
-          <li><button class="btn segments-btn segments-btn-1 active">א</button></li>
-          <li><button class="btn segments-btn segments-btn-2">א</button></li>
-          <li><button class="btn segments-btn segments-btn-3">א</button></li>
-        </ul>
+  <body data-theme="light">
+    <div class="app">
+      <div class="app_header">
+        <button class="btn btn_icon icon-more"></button>
+        <div class="app_header-item">
+          <span>Apple, Inc.</span>
+          <span class="divider"></span>
+          <span>AAPL</span>
+          <span class="divider sm-hidden"></span>
+        </div>
+        <div class="app_header-item mr-middle">
+          <div class="app_header-count">2,031.07</div>
+          <div class="app_header-percent">+0.04%</div>
+          <button class="btn btn_icon icon-question"></button>
+        </div>
+        <div class="app_header-item mr-auto">
+          <div class="app_header-numbers">נכון ל-12.12.2023, 14:05</div>
+          <button class="btn btn_icon icon-info"></button>
+          <button class="btn btn_icon icon-refresh"></button>
+        </div>
+        <button class="btn appbar-tools show_modal1_top"></button>
       </div>
-		</div>
-    <div class="modal-footer">
-      <button class="btn btn-filled btn-primary">אישור</button>
+      <!-- /app_header -->
+      <div class="app-content">
+        <div
+          class="js_showinfo"
+          style="font-size: 22px; text-align: center; padding: 40px 0"
+        >
+          Chart is going to be here...
+        </div>
+
+        <div class="chips_container">
+          <div class="chip">
+            <div class="chip-icon pink"></div>
+            <div class="chip-name">סטימצקי</div>
+            <button class="btn chip-delete"></button>
+          </div>
+          <!-- /chip -->
+          <div class="chip">
+            <div class="chip-icon orange"></div>
+            <div class="chip-name">Tesla</div>
+            <button class="btn chip-delete"></button>
+          </div>
+          <!-- /chip -->
+        </div>
+        <!-- /chips_container -->
+      </div>
+      <!-- /app-content -->
+      <div class="appbar">
+        <button class="btn btn-filled show_modal2">
+          <span class="btn-text sm-hidden mr1">נרות</span>
+          <span class="icon icon-chart2"></span>
+        </button>
+
+        <button class="btn btn-filled sm-hidden show_modal3">
+          <span class="btn-text sm-hidden mr1">תוך יומי</span>
+          <span class="icon icon-zoom"></span>
+        </button>
+
+        <button class="btn btn-filled sm-visible">יומי</button>
+
+        <button class="btn btn-filled sm-visible">שבוע אחרון</button>
+
+        <ul class="appbar_menu">
+          <li>
+            <button class="btn btn-filled active js_textModal">1W</button>
+          </li>
+          <li><button class="btn btn-filled">1M</button></li>
+          <li><button class="btn btn-filled">3M</button></li>
+          <li><button class="btn btn-filled">6M</button></li>
+          <li><button class="btn btn-filled">1Y</button></li>
+          <li>
+            <button class="btn btn-filled" id="themeSwitcher">MAX</button>
+          </li>
+        </ul>
+
+        <button class="btn btn-border js_autocompleteModal">
+          <span class="btn-text mr1">השוואה</span>
+          <span class="icon icon-plus"></span>
+        </button>
+
+        <button class="btn appbar-tools show_modal1"></button>
+      </div>
+      <!-- /appbar -->
     </div>
-	</div>
-</div><!-- /modal -->
-<div class="modal" id="autocompleteModal">
-	<div class="modal-overlay"></div>
-	<div class="modal-dialog">
-		<div class="modal-header">
-			<div class="modal-title">הוספת ניירות להשוואה</div>
-      <button class="btn btn-link">ביטול</button>
-		</div>
-		<div class="modal-content">
-      <input type="search" class="autocomplete-input">
-			<ul class="modal-nav autocomplete-list">
-				<li>Tesla inc | TSLA</li>
-				<li>TESCO PLC | TSCO LN</li>
-				<li>Aehr Test Systems | AEHR</li>
-			</ul>
-		</div>
-	</div>
-</div><!-- /modal -->
+    <!-- /app -->
 
-<div class="chart_info">
-	C: 2,031 <b class="color-danger">0.44%-</b> | O: 2,012 | L: 1,977 | H: 2,028 | Vol: 1,282
-</div><!-- /chart_info -->
+    <div class="modal" id="modal1">
+      <div class="modal-overlay"></div>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title">תקופת זמן</div>
+        </div>
+        <div class="modal-content">
+          <ul class="modal-nav">
+            <li><a href="#" class="active">שבוע אחרון</a></li>
+            <li><a href="#">חודש אחרון</a></li>
+            <li><a href="#">3 חודשים אחרונים</a></li>
+            <li><a href="#">חצי שנה אחרונה</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
+    <div class="modal" id="modal2">
+      <div class="modal-overlay"></div>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title">תקופת זמן</div>
+        </div>
+        <div class="modal-content">
+          <ul class="modal-nav">
+            <li>
+              <a href="#" class="active"
+                ><span class="icon icon-chart1"></span> קווי</a
+              >
+            </li>
+            <li>
+              <a href="#"><span class="icon icon-chart2"></span> נרות</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon-chart3"></span> עמודות</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon-chart4"></span> רנקו</a>
+            </li>
+            <li>
+              <a href="#"><span class="icon icon-chart5"></span> הייקן-אשי</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
 
-<!--
-https://www.figma.com/design/AmTxjGEo38qyinaPZ3qVzf/Leumi-Trade---Dev-(%D7%92%D7%A8%D7%A3-%D7%9E%D7%95%D7%A8%D7%97%D7%91)?node-id=0-1&t=nqg2Jkkf35hNRqo1-0
-giyora@bursagraph.co.il
-BursagraphFigma
--->
+    <div class="modal" id="modal3">
+      <div class="modal-overlay"></div>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title">תקופת זמן</div>
+          <button class="btn btn-border btn-sm">איפוס</button>
+        </div>
+        <div class="modal-content">
+          <ul class="modal-nav">
+            <li>
+              <label class="switch-item"
+                ><input type="checkbox" class="switcher" /> רקע כהה</label
+              >
+            </li>
+            <li>
+              <label class="switch-item"
+                ><input type="checkbox" class="switcher" /> נרות מלאים</label
+              >
+            </li>
+            <li>
+              <label class="switch-item"
+                ><input type="checkbox" class="switcher" /> קווי רשת
+                (מתאר)</label
+              >
+            </li>
+          </ul>
+          <div class="sm-visible">
+            <ul class="segments">
+              <li>
+                <button class="btn segments-btn segments-btn-1 active">
+                  א
+                </button>
+              </li>
+              <li>
+                <button class="btn segments-btn segments-btn-2">א</button>
+              </li>
+              <li>
+                <button class="btn segments-btn segments-btn-3">א</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-filled btn-primary">אישור</button>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
+    <div class="modal" id="autocompleteModal">
+      <div class="modal-overlay"></div>
+      <div class="modal-dialog">
+        <div class="modal-header">
+          <div class="modal-title">הוספת ניירות להשוואה</div>
+          <button class="btn btn-link">ביטול</button>
+        </div>
+        <div class="modal-content">
+          <input type="search" class="autocomplete-input" />
+          <ul class="modal-nav autocomplete-list">
+            <li>Tesla inc | TSLA</li>
+            <li>TESCO PLC | TSCO LN</li>
+            <li>Aehr Test Systems | AEHR</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="js/common.js"></script>
+    <div class="modal simpleModal" id="textModal">
+      <div class="modal-overlay"></div>
+      <div class="modal-dialog">
+        <button class="modal-close"></button>
+        <div class="modal-header">
+          <div class="modal-title">מועד עדכניות הנתונים</div>
+        </div>
+        <div class="modal-content">
+          <div class="modal-title2">בתוך זמן המסחר</div>
+          <div class="modal-list">
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסות בארה״ב (שניתן לסחור בהם בלאומי
+              טרייד) - מוצגים בזמן אמת
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+          </div>
+          <!-- /modal-list -->
+          <div class="modal-title2">בתוך זמן המסחר</div>
+          <div class="modal-list">
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסות בארה״ב (שניתן לסחור בהם בלאומי
+              טרייד) - מוצגים בזמן אמת
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+          </div>
+          <!-- /modal-list -->
+          <div class="modal-title2">בתוך זמן המסחר</div>
+          <div class="modal-list">
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסות בארה״ב (שניתן לסחור בהם בלאומי
+              טרייד) - מוצגים בזמן אמת
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+          </div>
+          <!-- /modal-list -->
+          <div class="modal-title2">בתוך זמן המסחר</div>
+          <div class="modal-list">
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסות בארה״ב (שניתן לסחור בהם בלאומי
+              טרייד) - מוצגים בזמן אמת
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+          </div>
+          <!-- /modal-list -->
+          <div class="modal-title2">בתוך זמן המסחר</div>
+          <div class="modal-list">
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסות בארה״ב (שניתן לסחור בהם בלאומי
+              טרייד) - מוצגים בזמן אמת
+            </div>
+            <div class="modal-list__item">
+              נתוני ניירות הערך הנסחרים בבורסה בישראל - מוצגים בזמן אמת.
+            </div>
+          </div>
+          <!-- /modal-list -->
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-primary btn-expand">הבנתי, תודה</button>
+        </div>
+      </div>
+    </div>
+    <!-- /modal -->
 
-</body>
+    <div class="chart_info">
+      C: 2,031 <b class="color-danger">0.44%-</b> | O: 2,012 | L: 1,977 | H:
+      2,028 | Vol: 1,282
+    </div>
+    <!-- /chart_info -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+  </body>
 </html>

@@ -1,6 +1,6 @@
 // Open modal
 const clickFunction = (classname, id) => {
-  document.querySelector(classname).addEventListener("click", (e) => {
+  document.querySelector(classname).addEventListener("click", () => {
     document.body.classList.add("modal-opened");
     document.querySelector(id).classList.add("opened");
   });
@@ -10,10 +10,20 @@ clickFunction(".show_modal1_top", "#modal1");
 clickFunction(".show_modal2", "#modal2");
 clickFunction(".show_modal3", "#modal3");
 clickFunction(".js_autocompleteModal", "#autocompleteModal");
+clickFunction(".js_textModal", "#textModal");
 
 // overlay
 const overlays = document.querySelectorAll(".modal-overlay");
 overlays.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    document.body.classList.remove("modal-opened");
+    e.target.closest(".modal").classList.remove("opened");
+  });
+});
+
+// modal-close
+const modalCloseBtns = document.querySelectorAll(".modal-close");
+modalCloseBtns.forEach((el) => {
   el.addEventListener("click", (e) => {
     document.body.classList.remove("modal-opened");
     e.target.closest(".modal").classList.remove("opened");
